@@ -1,8 +1,10 @@
+import ScrollToTop from '@/components/ScrollToTop'
+
 const Contact = () => {
   return (
     <div name='Contact'
-      className="w-full h-screen bg-[#FAFBFC] flex justify-center items-center p-4
-    dark:bg-[#0f0f0f]">
+      className="relative w-full h-screen bg-[#FAFBFC] flex justify-center items-center p-4
+      dark:bg-[#0f0f0f]">
       <form method="POST" action={import.meta.env.VITE_GETFORM}
         className="flex flex-col max-w-[600px] w-full">
         {/* description */}
@@ -28,6 +30,7 @@ const Contact = () => {
           Send
         </button>
       </form>
+      <ScrollToTop />
     </div>
   )
 }
