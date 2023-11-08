@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.bn32 {
+  border-color: #ffffff;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: rgb(124, 119, 119);
+  background-image: linear-gradient(45deg, transparent 50%, #969191 50%);
+  background-position: 25%;
+  background-size: 400%;
+  -webkit-transition: background 400ms ease-in-out, color 400ms ease-in-out;
+  transition: background 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.bn32:hover {
+  background-position: 100%;
+}
