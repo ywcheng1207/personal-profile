@@ -1,6 +1,7 @@
 //
 import Nav from '@/components/Nav/Nav'
 import Home from '@/components/Home/Home'
+import About from '@/components/About/About'
 
 //
 import { useSelector } from 'react-redux'
@@ -13,6 +14,7 @@ function App () {
     <div className={themeState.theme}>
       <Nav />
       <Home />
+      <About />
     </div>
   )
 }
