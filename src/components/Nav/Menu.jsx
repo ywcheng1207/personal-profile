@@ -19,8 +19,9 @@ const items = {
 //
 const ListItem = ({ tag, text }) => {
   return (
-    <Link to={tag} smooth={true} duration={500} className='h-full'>
-      <li className='h-full flex items-center'>{text}</li>
+    <Link to={tag} smooth={true} duration={500}
+      className='h-full cursor-pointer hover:bg-red-400 hover:text-white transition-colors duration-300'>
+      <li className='h-full flex items-center p-10'>{text}</li>
     </Link>
   )
 }
@@ -31,7 +32,7 @@ const Menu = () => {
   const dispatch = useDispatch()
 
   return (
-    <ul className='hidden h-full md:flex gap-10'>
+    <ul className='hidden h-full md:flex '>
       {Object.entries(items).map(([key, value]) => {
         return <ListItem key={key} tag={key} text={value}/>
       })}
