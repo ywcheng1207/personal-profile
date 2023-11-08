@@ -28,7 +28,7 @@ const SkillItem = ({ iconSRC, text }) => {
 //
 const Skills = () => {
   return (
-    <div name='Skills' className='w-full h-screen bg-[#fafbfc] font-bold dark:text-gray-300 dark:bg-[#252323]'>
+    <div name='Skills' className='w-full h-screen bg-[#fafbfc] font-bold dark:text-gray-300 dark:bg-[#0f0f0f]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
           <p className='text-4xl font-bold inline border-b-4'>Skills</p>

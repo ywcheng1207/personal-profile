@@ -4,7 +4,7 @@ import gptClone from '@/assets/gpt-screenshot.JPG'
 //
 const Projects = () => {
   return (
-    <div name='Projects' className="w-full min-h-screen flex justify-center items-center dark:bg-[#0f0f0f] ">
+    <div name='Projects' className="w-full min-h-screen flex justify-center items-center bg-[#FAFBFC] dark:bg-[#0f0f0f] ">
       <div className="max-w-screen-lg mx-auto mt-10 flex flex-col gap-20">
         {/* p1 */}
         <div className='md:flex gap-5 dark:text-white'>
@@ -18,8 +18,8 @@ const Projects = () => {
             <p className='text-gray-400 px-3'>Axios</p>
             <p className='text-gray-400 px-3'>sweetalert2</p>
             <div className='text-gray-700 mt-5 flex gap-3'>
-              <a href="/" target="_blank" className='bn32'>DEMO</a>
-              <a href="/" target="_blank" className='bn32'>CODE</a>
+              <a href="https://magic9701.github.io/into-mountain/" target="_blank" className='bn32' rel="noreferrer">DEMO</a>
+              <a href="https://github.com/magic9701/into-mountain" target="_blank" className='bn32' rel="noreferrer">CODE</a>
             </div>
           </div>
         </div>
