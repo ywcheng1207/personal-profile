@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .bn32 {
   border-color: #ffffff;
   padding: 3px 15px;

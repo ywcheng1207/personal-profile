@@ -15,7 +15,7 @@ function App () {
 
   return (
     <div className={themeState.theme}>
-      <div className='min-w-fit'>
+      <div className='min-w-fit font-serif'>
         <Nav />
         <Home />
         <About />
