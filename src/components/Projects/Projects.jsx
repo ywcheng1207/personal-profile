@@ -8,7 +8,7 @@ const Projects = () => {
       <div className=" max-w-[1000px] mx-auto  flex flex-col">
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-gray-200 text-gray-400'>Projects</p>
-          <p className='py-4 font-bold dark:text-gray-300'>Here are the side projects I've been working on recently.</p>
+          <p className='py-4 font-bold text-gray-400'>Here are the side projects I've been working on recently.</p>
         </div>
         {/* p1 */}
         <div className='md:flex gap-5 dark:text-white'>
@@ -22,8 +22,8 @@ const Projects = () => {
             <p className='text-gray-400 px-3'>Axios</p>
             <p className='text-gray-400 px-3'>sweetalert2</p>
             <div className='text-gray-700 mt-5 flex gap-3'>
-              <a href="https://magic9701.github.io/into-mountain/" target="_blank" className='bn32' rel="noreferrer">DEMO</a>
-              <a href="https://github.com/magic9701/into-mountain" target="_blank" className='bn32' rel="noreferrer">CODE</a>
+              <a href="https://magic9701.github.io/into-mountain/" target="_blank" className='btn' rel="noreferrer">DEMO</a>
+              <a href="https://github.com/magic9701/into-mountain" target="_blank" className='btn' rel="noreferrer">CODE</a>
             </div>
           </div>
         </div>
@@ -41,8 +41,8 @@ const Projects = () => {
             <p className='text-gray-400 px-3'>Material UI</p>
             <p className='text-gray-400 px-3'>GSAP</p>
             <div className='text-gray-700 mt-5 flex gap-3'>
-              <a href="https://illustrious-dasik-a7c21d.netlify.app/" target="_blank" className='bn32' rel="noreferrer">DEMO</a>
-              <a href="https://github.com/ywcheng1207/gpt-frontend-project" target="_blank" className='bn32' rel="noreferrer">CODE</a>
+              <a href="https://illustrious-dasik-a7c21d.netlify.app/" target="_blank" className='btn' rel="noreferrer">DEMO</a>
+              <a href="https://github.com/ywcheng1207/gpt-frontend-project" target="_blank" className='btn' rel="noreferrer">CODE</a>
             </div>
           </div>
         </div>
