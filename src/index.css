@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* ------------------- typing effect ------------------- */
 .typing-effect-white {
@@ -45,6 +47,13 @@
   background: linear-gradient(to top, #0f0f0f, transparent);
   z-index: 10;
 }
+
+/*  */
+.home-text-font-fam {
+  font-family: 'Oooh Baby', sans-serif;
+}
+
+
 
 /* ------------------- btn style ------------------- */
 .btn {

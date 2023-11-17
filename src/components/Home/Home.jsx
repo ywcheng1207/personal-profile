@@ -17,9 +17,8 @@ const Home = () => {
       ${themeState.theme === 'light' ? 'blur-boundary' : 'blur-boundary-dark sepia-[.25]'}`}
     >
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-        <h1 className='text-4xl sm:text-7xl text-white font-bold'> Hi there!</h1>
-        <h2 className='text-2xl sm:text-3xl typing-effect-white'>I'm YWJ, a passionate developer.</h2>
-        <div className='flex gap-3'>
+        <h1 className='text-4xl sm:text-6xl text-neutral-300 font-bold home-text-font-fam'> Welcome ! I'm YWJ. </h1>
+        <div className='flex gap-3 mt-10'>
           <a
             href='https://github.com/ywcheng1207'
             target="_blank" rel="noreferrer"
