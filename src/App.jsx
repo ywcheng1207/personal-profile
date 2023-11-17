@@ -9,20 +9,43 @@ import Contact from '@/components/Contact/Contact'
 import { useSelector } from 'react-redux'
 import { selectTheme } from '@/store/slices/themeSlice'
 
+//
+import { gsap } from 'gsap'
+import { useLayoutEffect, useRef } from 'react'
+
+//
 function App () {
   const themeState = useSelector(selectTheme)
+  const quoteRef = useRef(null)
+
+  useLayoutEffect(() => {
+    const headerCover = gsap.timeline()
+    headerCover
+      .to('.loadingValue', { width: '100%', duration: 2 })
+      .to('.loadingBar', { opacity: 0, duration: 0.1 })
+      .to('.quote', { opacity: 0, duration: 0.1 })
+      .to('.headerCover', { height: 0, duration: 0.5 })
+  }, [])
 
   return (
-    <div className={themeState.theme}>
-      <div className='min-w-fit font-serif'>
-        <Nav />
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+    <>
+      <div className="headerCover">
+        <div className="quote" id="quote" ref={quoteRef}>Welcome</div>
+        <div className="loadingBar">
+          <div className="loadingValue"></div>
+        </div>
       </div>
-    </div>
+      <div className={themeState.theme}>
+        <div className='min-w-fit font-serif  app'>
+          <Nav />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
+      </div>
+    </>
   )
 }
 

@@ -6,23 +6,36 @@
 .typing-effect-white {
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: .7px white;
-  background-image: linear-gradient(white,white);
+  background-image: linear-gradient(rgb(173, 161, 161),white);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: typing 6s linear  2s infinite;
+  animation: typing 6s linear;
+  animation-delay: 2s;
+  position: relative;
 }
-.typing-effect-white::before {
+
+@keyframes typing{
+  0%,10%,100%{
+    background-position: -33em 0;
+    webkit-text-stroke: 0;
+  }
+  65%,85%{
+    background-position: 0 0;
+  }
+}
+
+/* 霧化home page與下一個page的接觸區塊 */
+.blur-boundary::before {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 0;
-  height: 100%;
-  border-right: 2px solid white;
-  z-index: -1;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0F0F0F, transparent);
+  z-index: 10;
 }
+
 
 
 /* ------------------- btn style ------------------- */
@@ -97,3 +110,41 @@
 }
 
 
+/* test */
+
+.headerCover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: black;
+	position: fixed;
+	left: 0;top: 0;
+	z-index: 100;
+	width: 100%;height: 100%;
+}
+.quote {
+	font-size: 28px;
+	color: white;
+	margin-bottom: 10px;
+}
+.char {
+	display: inline-block;
+	letter-spacing: 2px;
+	font-family: 'Moon Dance';
+	opacity: 0;
+}
+.loadingBar {
+	position: relative;
+	margin-top: 20px;
+	width: 100vw;
+	height: 1px;
+	border-radius: 5px;
+	background-color: rgba(#000,.1);
+	overflow: hidden;
+}
+.loadingValue {
+	position: absolute;
+	background-color: white;
+	width: 0;height: 3px;
+}
