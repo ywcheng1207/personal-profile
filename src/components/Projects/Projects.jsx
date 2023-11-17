@@ -4,19 +4,19 @@ import gptClone from '@/assets/gpt-screenshot.JPG'
 //
 const Projects = () => {
   return (
-    <div name='Projects' className="w-full min-h-screen pt-32 bg-[#FAFBFC] dark:bg-[#0f0f0f] ">
-      <div className=" max-w-[1000px] mx-auto  flex flex-col">
+    <div name='Projects' className="w-full min-h-screen py-32  bg-[#FAFBFC] dark:bg-[#0f0f0f] ">
+      <div className=" max-w-[1000px] mx-auto px-4 flex flex-col">
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-gray-200 text-gray-400'>Projects</p>
           <p className='py-4 font-bold text-gray-400'>Here are the side projects I've been working on recently.</p>
         </div>
         {/* p1 */}
-        <div className='md:flex gap-5 dark:text-white'>
-          <div className='flex items-center justify-center'>
-            <img src={mountain} alt="mountain" className='max-w-md'/>
+        <div className='flex flex-col-reverse mt-5 sm:flex-row sm:gap-5 dark:text-white'>
+          <div className='flex items-center justify-center mt-3'>
+            <img src={mountain} alt="mountain" className='sm:max-w-md'/>
           </div>
-          <div className=' p-5 w-full flex flex-col gap-3'>
-            <p className='text-2xl text-gray-500 border-b-2 pb-1 font-bold dark:text-gray-300'>登山小站 (Team)</p>
+          <div className='w-full flex flex-col gap-3'>
+            <p className='text-lg text-gray-400 border-b-2 pb-1 font-bold dark:text-gray-300 md:text-2xl'>登山小站 (Team)</p>
             <p className='text-gray-400 px-3'>React</p>
             <p className='text-gray-400 px-3'>CSS Modules</p>
             <p className='text-gray-400 px-3'>Axios</p>
@@ -28,12 +28,12 @@ const Projects = () => {
           </div>
         </div>
         {/* p2 */}
-        <div className='md:flex gap-5 sm:flex-row-reverse dark:text-white'>
-          <div className='flex items-center justify-center' >
-            <img src={gptClone} alt="gptClone" className='max-w-md'/>
+        <div className='flex flex-col-reverse mt-10 sm:flex-row-reverse sm:gap-5 dark:text-white'>
+          <div className='flex items-center justify-center mt-3'>
+            <img src={gptClone} alt="gptClone" className='sm:max-w-md'/>
           </div>
-          <div className='p-5 w-full flex flex-col gap-3'>
-            <p className='text-2xl text-gray-500 border-b-2 pb-1 font-bold dark:text-gray-300'>Simplified ChatGPT (Personal)</p>
+          <div className='w-full flex flex-col gap-3'>
+            <p className='text-lg text-gray-400 border-b-2 pb-1 font-bold dark:text-gray-300 md:text-2xl'>Simplified ChatGPT (Personal)</p>
             <p className='text-gray-400 px-3'>React</p>
             <p className='text-gray-400 px-3'>styled-components</p>
             <p className='text-gray-400 px-3'>Redux Toolkit</p>
