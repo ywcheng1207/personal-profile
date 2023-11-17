@@ -2,6 +2,12 @@
 import { useSelector } from 'react-redux'
 import { selectTheme } from '@/store/slices/themeSlice'
 
+//
+import GitHub from '@/assets/github.svg'
+import Medium from '@/assets/medium.svg'
+import Person from '@/assets/person.svg'
+
+//
 const Home = () => {
   const themeState = useSelector(selectTheme)
 
@@ -13,6 +19,32 @@ const Home = () => {
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <h1 className='text-4xl sm:text-7xl text-white font-bold'> Hi there!</h1>
         <h2 className='text-2xl sm:text-3xl typing-effect-white'>I'm YWJ, a passionate developer.</h2>
+        <div className='flex gap-3'>
+          <a
+            href='https://github.com/ywcheng1207'
+            target="_blank" rel="noreferrer"
+            title='GitHub'
+            className='w-8 block hover:scale-105'
+          >
+            <img src={GitHub} alt="GitHub" />
+          </a>
+          <a
+            href='https://medium.com/@ywcheng1207'
+            target="_blank" rel="noreferrer"
+            title='Medium'
+            className='w-8 block hover:scale-105'
+          >
+            <img src={Medium} alt="Medium" />
+          </a>
+          <a
+            href='https://www.cakeresume.com/dashboard'
+            target="_blank" rel="noreferrer"
+            title='CakeResume'
+            className='w-8 block hover:scale-105'
+          >
+            <img src={Person} alt="CakeResume" />
+          </a>
+        </div>
       </div>
     </div>
   )
