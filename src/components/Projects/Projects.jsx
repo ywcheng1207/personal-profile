@@ -4,7 +4,7 @@ import gptClone from '@/assets/gpt-screenshot.JPG'
 //
 const Projects = () => {
   return (
-    <div name='Projects' className="w-full min-h-screen  bg-[#FAFBFC] dark:bg-[#0f0f0f] ">
+    <div name='Projects' className="w-full min-h-screen pt-32 bg-[#FAFBFC] dark:bg-[#0f0f0f] ">
       <div className=" max-w-[1000px] mx-auto  flex flex-col">
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-gray-200 text-gray-400'>Projects</p>
