@@ -29,7 +29,7 @@ function App () {
   return (
     <>
       <div className="headerCover">
-        <div className="quote" id="quote" >Welcome</div>
+        <div className="quote home-text-font-fam" id="quote" >Welcome</div>
         <div className="loadingBar">
           <div className="loadingValue"></div>
         </div>

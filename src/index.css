@@ -127,14 +127,14 @@
 }
 
 
-/* test */
+/* headerCover */
 
 .headerCover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: black;
+	background-color: #0f0f0f;
 	position: fixed;
 	left: 0;top: 0;
 	z-index: 100;
