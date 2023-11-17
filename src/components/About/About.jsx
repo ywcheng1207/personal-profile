@@ -14,7 +14,9 @@ const About = () => {
   }, [])
 
   return (
-    <div name='About' className="w-full h-screen bg-[#fafbfc] text-gray-900 dark:bg-[#0f0f0f] dark:text-gray-300">
+    <div name='About'
+      className={'w-full h-screen relative bg-[#fafbfc] text-gray-900 dark:bg-[#0f0f0f] dark:text-gray-300'}
+    >
       <div id='about' className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-4">
           <div>
