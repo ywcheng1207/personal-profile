@@ -1,8 +1,17 @@
-# React + Vite
+## ✨ PERSONAL PROFILE [DEMO](https://resonant-monstera-fb8abc.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](public/screenshot01.JPG)
 
-Currently, two official plugins are available:
+## 👋 Welcome
+This is a my personal profile project based on the React framework and Tailwind. Feel free to explore my work, and if you have any questions or suggestions, please don't hesitate to contact me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Tools version
+    "redux": "^4.2.1",
+    "@reduxjs/toolkit": "^1.9.7",
+    "gsap": "^3.12.2",
+    "aos": "^2.3.4",
+    "react-scroll": "^1.9.0",
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.11.0",
+    "tailwindcss": "^3.3.5",
+    
