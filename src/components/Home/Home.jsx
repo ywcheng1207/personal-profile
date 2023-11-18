@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
     <div name='Home'
-      className={`w-full relative h-screen bg-backImg bg-cover bg-fixed bg-bottom sm:bg-center bg-no-repeat 
-      ${themeState.theme === 'light' ? 'blur-boundary' : 'blur-boundary-dark sepia-[.25]'}`}
+      className={`w-full relative h-screen bg-cover bg-fixed bg-bottom sm:bg-center bg-no-repeat 
+      ${themeState.theme === 'light' ? 'blur-boundary bg-backImgLight' : 'blur-boundary-dark bg-backImgDark'}`}
     >
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <h1 className='text-4xl sm:text-6xl text-neutral-300 font-bold home-text-font-fam'> Welcome ! I'm YWJ. </h1>
