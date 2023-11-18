@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div name='Home'
-      className={`w-full relative h-screen bg-backImg bg-cover bg-fixed bg-center bg-no-repeat 
+      className={`w-full relative h-screen bg-backImg bg-cover bg-fixed bg-bottom sm:bg-center bg-no-repeat 
       ${themeState.theme === 'light' ? 'blur-boundary' : 'blur-boundary-dark sepia-[.25]'}`}
     >
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
