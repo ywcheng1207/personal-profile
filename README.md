@@ -1,6 +1,7 @@
 ## ✨ PERSONAL PROFILE [DEMO](https://resonant-monstera-fb8abc.netlify.app/)
 
 ![](public/screenshot01.JPG)
+![](public/screenshot02.JPG)
 
 ## 👋 Welcome
 This is a my personal profile project based on the React framework and Tailwind. Feel free to explore my work, and if you have any questions or suggestions, please don't hesitate to contact me.
