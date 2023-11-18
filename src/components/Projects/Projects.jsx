@@ -1,5 +1,7 @@
-import mountain from '@/assets/mountain-sceenshot.jpg'
+//
+import mountain from '@/assets/mountain-screenshot.jpg'
 import gptClone from '@/assets/gpt-screenshot.JPG'
+import profilePage from '@/assets/personal-profile-screenshot.JPG'
 
 //
 const Projects = () => {
@@ -43,6 +45,25 @@ const Projects = () => {
             <div className='text-gray-700 mt-5 flex gap-3'>
               <a href="https://illustrious-dasik-a7c21d.netlify.app/" target="_blank" className='btn' rel="noreferrer">DEMO</a>
               <a href="https://github.com/ywcheng1207/gpt-frontend-project" target="_blank" className='btn' rel="noreferrer">CODE</a>
+            </div>
+          </div>
+        </div>
+        {/* p1 */}
+        <div className='flex flex-col-reverse mt-5 sm:flex-row sm:gap-5 dark:text-white'>
+          <div className='flex items-center justify-center mt-3'>
+            <img src={profilePage} alt="profilePage" className='sm:max-w-md'/>
+          </div>
+          <div className='w-full flex flex-col gap-3'>
+            <p className='text-lg text-gray-400 border-b-2 pb-1 font-bold dark:text-gray-300 md:text-2xl'>WebBio (Personal)</p>
+            <p className='text-gray-400 px-3'>React</p>
+            <p className='text-gray-400 px-3'>Redux</p>
+            <p className='text-gray-400 px-3'>Tailwind</p>
+            <p className='text-gray-400 px-3'>GSAP</p>
+            <p className='text-gray-400 px-3'>aos</p>
+            <p className='text-gray-400 px-3'>getform.io</p>
+            <div className='text-gray-700 mt-5 flex gap-3'>
+              <a href="https://resonant-monstera-fb8abc.netlify.app/" target="_blank" className='btn' rel="noreferrer">DEMO</a>
+              <a href="https://github.com/ywcheng1207/personal-profile" target="_blank" className='btn' rel="noreferrer">CODE</a>
             </div>
           </div>
         </div>
