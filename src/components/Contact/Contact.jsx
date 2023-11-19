@@ -2,17 +2,18 @@
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
-
-//
-import ErrorMessage from '../ErrorMessage'
 import { useState } from 'react'
-
-//
-import Tick from '@/assets/tick.svg?react'
 
 //
 import { useSelector } from 'react-redux'
 import { selectTheme } from '@/store/slices/themeSlice'
+
+//
+import ErrorMessage from '../ErrorMessage'
+import ScrollToTop from '../ScrollToTop'
+
+//
+import Tick from '@/assets/tick.svg?react'
 
 //
 const Contact = () => {
@@ -107,6 +108,7 @@ const Contact = () => {
           </button>
         }
       </form>
+      <ScrollToTop className='absolute bottom-0 right-0' />
     </div>
   )
 }
