@@ -12,7 +12,7 @@ const ListItem = ({ tag }) => {
   return (
     <Link to={tag} smooth={true} duration={500}
       className='h-full cursor-pointer hover:bg-red-400 hover:text-white transition-colors duration-300'>
-      <li className='h-full flex items-center p-10'>{tag}</li>
+      <li className='h-full flex items-center px-10'>{tag}</li>
     </Link>
   )
 }
